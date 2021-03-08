@@ -18,7 +18,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-toggler">
     <div class="container">
       <a class="navbar-brand" href="#Home">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -35,12 +35,15 @@
             <a class="nav-link" href="#">Blog</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Click Me</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Click Me</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Roket</a></li>
               <li><a class="dropdown-item" href="#">Uzay</a></li>
               <li><a class="dropdown-item" href="#">Ay</a></li>
-              <li><hr class="dropdown-divider"></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
               <li><a class="dropdown-item" href="#">Mars</a></li>
             </ul>
           </li>
@@ -53,52 +56,33 @@
   </nav>
 
 
-   <div id="Home">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-column justify-content-center align-items-center bg-info ">
-          <div class="text-center">
-            <h1>UZAY PROJEKT</h1>
 
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-column justify-content-center align-items-center bg-info ">
+        <div class="text-center">
+          <h1>UZAY PROJEKT</h1>
+
         </div>
       </div>
     </div>
-  </div>
 
 
+    <div class="row ">
+      <div class="col-lg-12">
+        <a href="rover.html">
+          <img src="/img/rover.jpg" class="btn btn-warning btn-lg" style="width: 100%;" alt=""> </a>
+      </div>
 
-
- <section name="" id="Rover">
-      <div class="container">
-        <div class="row ">
-          <div class="col-12 d-flex flex-column justify-content-center align-items-center .d-none .d-sm-block">
-          <a href="rover.html">
-          <img src="/img/rover.jpg" class="btn btn-warning btn-lg" style= "width: 1259px; height: 700px;" alt=""> </a>
-          </div>
-          
-        </div>
-       </div>
- </section>
+    </div>
 
     <!-- Page Features -->
-<section>
+    <!-- <section>
   <aside>
-    <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 text-center">
+    <div class="row row-cols-3 row-cols-md-2 row-cols-lg-3 text-center m-10">
 
         <div class="col md-4">
-          <div class="card ">
-            <img class="card-img-top" src="/img/roket.jpg" alt="" style="height: 500px;">
-            <div class="card-body">
-              <h4 class="card-title">Elon Musk iki roketle dünyaya meydan okudu?</h4>
-              <p class="card-text">Elon Musk’ın SpaceX’i ile ilki Falcon 9 roketi. Bir rekor kırdı. Bir fırlatmada tam 143 farklı uydu ve
-                uzay aracını yörüngeye taşıdı.sakince bir değil iki kolunu havaya kaldırdı ve ortanca parmaklar hariç
-                yumruklarını sıktı.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
+     
         </div>
 
         <div class="row text-center">
@@ -107,9 +91,7 @@
               <img class=" card-img-top" src="/img/arac.jpg" alt="" style="height: 500px;">
               <div class="card-body">
                 <h4 class="card-title">Ay’da su bulundu! Yine!</h4>
-                <p class="card-text">Bilim dünyasında bu haftanın en önemli gelişmesi hiç şüphesiz Ay’da yapılan bir keşif oldu. Ay’da su
-                  bulundu! Yine! On yıllardır oralarda bir yerde su olabileceği tahmin ediliyordu ama kanıtlanamamıştı.
-                  Üstelik ilk keşif 2020’de </p>
+
               </div>
               <div class="card-footer">
                 <a href="#" class="btn btn-primary">Find Out More!</a>
@@ -125,9 +107,7 @@
                 <img class="card-img-top" src="/img/amerikaastronot.jpg" alt=""style="height: 500px;">
                 <div class="card-body">
                   <h4 class="card-title">Dünyanın en yalnız insanı kim?</h4>
-                  <p class="card-text">Dünyanın değil, evrenin en yalnız insanı. Tahmin edebileceğiniz gibi 1969’da Ay’a gönderilen bir
-                    astronottan bahsediyorum. Hayır, Ay’a ilk ayak basan Neil Armstrong değildi en yalnız insan. Çünkü
-                    Ay’a</p>
+
                 </div>
                 <div class="card-footer">
                   <a href="#" class="btn btn-primary">Find Out More!</a>
@@ -137,230 +117,252 @@
 
         </div>
     </div>
-    </aside>
-  </section>
+  </aside>
+</section> -->
 
-  
-        
-  
+    <div class="card-group my-4">
+      <div class="card" onclick="goMyCard()">
+        <img class="card-img-top" src="/img/amerikaastronot.jpg" alt="" style="height: 500px;">
+        <div class="card-body">
+          <h4 class="card-title">Dünyanın en yalnız insanı kim?</h4>
+
+        </div>
+        <div class="card-footer">
+          <a href="./rover.html" class="btn btn-primary">Find Out More!</a>
+        </div>
+      </div>
+      <div class="card" onclick="goMyCard1()">
+        <img class=" card-img-top" src="/img/arac.jpg" alt="" style="height: 500px;">
+        <div class="card-body">
+          <h4 class="card-title">Ay’da su bulundu! Yine!</h4>
+
+        </div>
+        <div class="card-footer">
+          <a href="./rover.html" class="btn btn-primary">Find Out More!</a>
+        </div>
+      </div>
+      <div class="card" onclick="goMyCard2()">
+        <img class="card-img-top" src="/img/amerikaastronot.jpg" alt="" style="height: 500px;">
+        <div class="card-body">
+          <h4 class="card-title">Dünyanın en yalnız insanı kim?</h4>
+
+        </div>
+        <div class="card-footer">
+          <a href="./rover.html" class="btn btn-primary">Find Out More!</a>
+        </div>
+    
+      </div>
+    </div>
+  </div>
 
 
+  <div class="row my-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 ">
+          <div class="bg-secondery m-2 p-4 rounded text-justify shadow">
+            <img src="/img/ayakin.jpg" class="img-fluid" style="height:500px; width: 600px;" alt="">
+            <h4>Ay’da su bulundu! Yine!</h4>
+            <span class="d-inline-block text-truncate" style="max-width: 150px;">
+              Bilim dünyasında bu haftanın en önemli gelişmesi hiç şüphesiz Ay’da yapılan bir keşif oldu. Ay’da su
+              bulundu! Yine! On yıllardır oralarda bir yerde su olabileceği tahmin ediliyordu ama kanıtlanamamıştı.
+              Üstelik ilk keşif 2020’de değil, 11 yıl önce, 2009’da yapıldı. Ay’ın kutuplarında hiç güneş almayan
+              kraterlerin içinde su buzu olduğu tespit edildi. O kraterlerin güneş sisteminin en soğuk noktaları
+              olduğunu düşündüğümüzde bu çok da şaşırtıcı gelmeyebilir. İşte şaşırtıcı olan şey bu hafta yapılan
+              keşif. Ay’ın güneş alan yerlerinde de su molekülleri olduğu bulundu. </span>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 ">
+          <div class="bg-secondery m-2 m-2 p-4 rounded">
+            <img src="/img/uydu.jpg" class="img-fluid" style="height:500px; width: 600px;" alt="">
+            <h4>Gökyüzünde bu ışıkları görürseniz korkmayın! Starlink uydu treni</h4>
+            <span class="d-inline-block text-truncate" style="max-width: 150px;">
+              ptas. Repudiandae eius accusantium hic ratione doloremque quos enim animi quia laborum ipsum,
+              quisquam, repellendus nulla perspiciatis explicabo delectus esse odit dignissimos quasi! Laudantium ex
+              iure, consequuntur ducimus repellat voluptas molestiae debitis nostrum, ea porro deleniti ut non
+              aperiam quisquam dolore accusamus fuga officiis rerum. Voluptate cupiditate alias sint non?</span>
+          </div>
+        </div>
 
+        <div class="col-12 col-md-4 ">
+          <div class="bg-dsecondery m-2  p-4 rounded">
+            <img src="/img/rokez atis.jpg" class="img-fluid" style="height:500px; width: 600px;" alt="">
+            <h4>3. Rokete ne oldu? Falcon Heavy fırlatışının sonuçları</h4>
+            <span class="d-inline-block text-truncate" style="max-width: 150px;">
+              6 Subatta hep birlikte tarihi bir ana tanıklık ettik. Dünyanın en büyük roketi uzaya gönderildi.
+              Bundan önce gönderilen son büyük roket 1973’te fırlatılan Saturn 5’ti. Yani bir anlamda yarım
+              yüzyıldır
+              uykuya dalmış olan uzay çalışmaları tekrar hareket kazandı. Üstelik uzaya gönderilen roket çok
+              eğlenceli
+              bir yük taşıdı. Daha doğrusu çok havalı! Üstü açık bir araba. O yüzden havalı 🙂 Bu araba bir Tesla
+              Roadster.Falcon Heavy üç roketin birleşiminden oluşuyor. Yandakiler kalkıştan bir süre sonra
+              ayrıldılar
+              ve başarılı bir şekilde dünyaya iniş yaptılar. Hem de ne iniş. Eş zamanlı şiir gibi bir iniş! Yan
+              roketler erken ayrıldıkları için tekrar fırlatıldıkları noktaya geri dönebildiler. Ancak merkezi roket
+              bir süre daha yükseldikten sonra geri dönmek zorunda olduğu için Atlantik okyanusundaki bir drone
+              platforma inecekti. Yani tıpkı Tesla’nın sürücüsüz arabaları gibi Space X’in de kaptansız gemileri
+              var.
+              Gerek roketler ve gerekse bu iniş platformu tamamen bilgisayarlar tarafından kontrol ediliyor.Önceden
+              bu
+              roketler ayrıldıktan sonra parçalanıp denize düşüyordu. Yani yeniden kullanılması zaten mümkün
+              değildi.
+              Ancak Space X “yeniden kullanılabilir roketler” üretmeye çalıştığı için bunları kullandıktan sonra
+              adeta
+              fizik kurallarına meydan okurcasına dikey olarak indirebilmeyi de başarmıştı. Tabi onlarca başarısız
+              denemenin ardından. Nitekim bu fırlatışta yan roketler başarıyla geri geldi. Herkes canlı yayında
+              üçüncü
+              roketin inişini beklerken önce görüntü dondu.“We lost the center core” diyorlar.Yani merkezdeki roketi
+              kaybettik.Peki 3. Rokete ne oldu? Falcon roketlerinin geri gelirken yavaşlatılması gerekiyor. Yumuşak
+              bir iniş için bu şart. Bunun için yukarı çıkarken tüm yakıtı harcamıyorlar. Bir kısmını dönüş için
+              saklıyorlar. Merkezi roketin arkasındaki 9 motordan 3’ünün geri dönüşte tekrar çalıştırılması
+              gerekiyordu. Ancak sadece biri ateşlenebildi. Roket yeryüzüne yaklaşırken yeterince yavaşlatılamadı ve
+              saatte 500 km hızla okyanusa çakıldı. Elon Musk drone geminin iki motorunu da beraberinde götürdüğünü
+              söyledi. </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div>
 
+  </div>
 
+  <footer id="Contact">
+    <div class="bg-dark text-center text-white">
 
+      <div class="container p-12">
 
+        <section class="m-4">
+          <!-- Facebook -->
+          <a class="btn btn-light btn-floating m-1" href="#" role="button">
+            <img src="/img/iconfinder_facebook.png" width="25px" alt="">
+            <i class="fab fa-facebook-f"></i></a>
 
+          <!-- Twitter -->
+          <a class="btn btn-light btn-floating m-1" href="#" role="button">
+            <img src="/img/twitter.png" width="25px" alt="">
+            <i class="fab fa-twitter"></i></a>
 
+          <!-- Github -->
+          <a class="btn btn-light btn-floating m-1" href="#" role="button">
+            <img src="/img/giticon.png" width="25px" alt="">
+            <i class="fab fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
 
-
-      <div class="row my-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-4 ">
-              <div class="bg-secondery m-2 p-4 rounded text-justify shadow">
-                <img src="/img/ayakin.jpg" class="img-fluid" style="height:500px; width: 600px;" alt="">
-                <h4>Ay’da su bulundu! Yine!</h4>
-                <span class="d-inline-block text-truncate" style="max-width: 150px;">
-                  Bilim dünyasında bu haftanın en önemli gelişmesi hiç şüphesiz Ay’da yapılan bir keşif oldu. Ay’da su
-                  bulundu! Yine! On yıllardır oralarda bir yerde su olabileceği tahmin ediliyordu ama kanıtlanamamıştı.
-                  Üstelik ilk keşif 2020’de değil, 11 yıl önce, 2009’da yapıldı. Ay’ın kutuplarında hiç güneş almayan
-                  kraterlerin içinde su buzu olduğu tespit edildi. O kraterlerin güneş sisteminin en soğuk noktaları
-                  olduğunu düşündüğümüzde bu çok da şaşırtıcı gelmeyebilir. İşte şaşırtıcı olan şey bu hafta yapılan
-                  keşif. Ay’ın güneş alan yerlerinde de su molekülleri olduğu bulundu. </span>
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
               </div>
-            </div>
-            <div class="col-12 col-md-4 ">
-              <div class="bg-secondery m-2 m-2 p-4 rounded">
-                <img src="/img/uydu.jpg" class="img-fluid" style="height:500px; width: 600px;" alt="">
-                <h4>Gökyüzünde bu ışıkları görürseniz korkmayın! Starlink uydu treni</h4>
-                <span class="d-inline-block text-truncate" style="max-width: 150px;">
-                  ptas. Repudiandae eius accusantium hic ratione doloremque quos enim animi quia laborum ipsum,
-                  quisquam, repellendus nulla perspiciatis explicabo delectus esse odit dignissimos quasi! Laudantium ex
-                  iure, consequuntur ducimus repellat voluptas molestiae debitis nostrum, ea porro deleniti ut non
-                  aperiam quisquam dolore accusamus fuga officiis rerum. Voluptate cupiditate alias sint non?</span>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example2" class="form-control" />
+                  <label class="form-label" for="form5Example2">Email address</label>
+                </div>
               </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+
+
+        <div class="row m-1">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-6">
+
+                <div class="m-2 p-4 text-justify shadow ">
+
+
+                  <div class="col-xs-12 col-6">
+                    <ul class="list-group">
+                      <li class="list-group-item text-center text-dark m-1">
+                        <a href="#!" class="text-dark">Home</a>
+                      </li>
+                      <li class="list-group-item text-center text-dark m-1">
+                        <a href="#!" class="text-dark">Rover</a>
+                      </li>
+                      <li class="list-group-item text-center text-dark m-1">
+                        <a href="#!" class="text-dark">Uzay</a>
+                      </li>
+                      <li class="list-group-item text-center text-dark  m-1">
+                        <a href="#!" class="text-dark">Uzay Insanlari</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class=" col-md-6">
+                <div class="m-2 p-4 text-justify shadow ">
+                  <div class="col-xs-12 col-6">
+                    <ul class=" list-group">
+                      <li class=" list-group-item text-center text-dark m-1">
+                        <a href="#!" class="text-dark">Elon Musk</a>
+                      </li>
+                      <li class="text-center list-group-item text-dark m-1">
+                        <a href="#!" class="text-dark">NASA</a>
+                      </li>
+                      <li class="text-center list-group-item text-dark m-1">
+                        <a href="#!" class="text-dark">Uydu</a>
+                      </li>
+
+                      <li class="text-center list-group-item text-dark m-1">
+                        <a href="#!" class="text-dark">Güncel Firlatmalar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
-            <div class="col-12 col-md-4 ">
-              <div class="bg-dsecondery m-2  p-4 rounded">
-                <img src="/img/rokez atis.jpg" class="img-fluid" style="height:500px; width: 600px;" alt="">
-                <h4>3. Rokete ne oldu? Falcon Heavy fırlatışının sonuçları</h4>
-                <span class="d-inline-block text-truncate" style="max-width: 150px;">
-                  6 Subatta hep birlikte tarihi bir ana tanıklık ettik. Dünyanın en büyük roketi uzaya gönderildi.
-                  Bundan önce gönderilen son büyük roket 1973’te fırlatılan Saturn 5’ti. Yani bir anlamda yarım
-                  yüzyıldır
-                  uykuya dalmış olan uzay çalışmaları tekrar hareket kazandı. Üstelik uzaya gönderilen roket çok
-                  eğlenceli
-                  bir yük taşıdı. Daha doğrusu çok havalı! Üstü açık bir araba. O yüzden havalı 🙂 Bu araba bir Tesla
-                  Roadster.Falcon Heavy üç roketin birleşiminden oluşuyor. Yandakiler kalkıştan bir süre sonra
-                  ayrıldılar
-                  ve başarılı bir şekilde dünyaya iniş yaptılar. Hem de ne iniş. Eş zamanlı şiir gibi bir iniş! Yan
-                  roketler erken ayrıldıkları için tekrar fırlatıldıkları noktaya geri dönebildiler. Ancak merkezi roket
-                  bir süre daha yükseldikten sonra geri dönmek zorunda olduğu için Atlantik okyanusundaki bir drone
-                  platforma inecekti. Yani tıpkı Tesla’nın sürücüsüz arabaları gibi Space X’in de kaptansız gemileri
-                  var.
-                  Gerek roketler ve gerekse bu iniş platformu tamamen bilgisayarlar tarafından kontrol ediliyor.Önceden
-                  bu
-                  roketler ayrıldıktan sonra parçalanıp denize düşüyordu. Yani yeniden kullanılması zaten mümkün
-                  değildi.
-                  Ancak Space X “yeniden kullanılabilir roketler” üretmeye çalıştığı için bunları kullandıktan sonra
-                  adeta
-                  fizik kurallarına meydan okurcasına dikey olarak indirebilmeyi de başarmıştı. Tabi onlarca başarısız
-                  denemenin ardından. Nitekim bu fırlatışta yan roketler başarıyla geri geldi. Herkes canlı yayında
-                  üçüncü
-                  roketin inişini beklerken önce görüntü dondu.“We lost the center core” diyorlar.Yani merkezdeki roketi
-                  kaybettik.Peki 3. Rokete ne oldu? Falcon roketlerinin geri gelirken yavaşlatılması gerekiyor. Yumuşak
-                  bir iniş için bu şart. Bunun için yukarı çıkarken tüm yakıtı harcamıyorlar. Bir kısmını dönüş için
-                  saklıyorlar. Merkezi roketin arkasındaki 9 motordan 3’ünün geri dönüşte tekrar çalıştırılması
-                  gerekiyordu. Ancak sadece biri ateşlenebildi. Roket yeryüzüne yaklaşırken yeterince yavaşlatılamadı ve
-                  saatte 500 km hızla okyanusa çakıldı. Elon Musk drone geminin iki motorunu da beraberinde götürdüğünü
-                  söyledi. </span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
 
-      <div>
 
-      </div>
-
-      <footer id="Contact">
-       <div class="bg-dark text-center text-white">
-
-        <div class="container p-12">
-
-          <section class="m-4">
-            <!-- Facebook -->
-            <a class="btn btn-light btn-floating m-1" href="#" role="button">
-              <img src="/img/iconfinder_facebook.png" width="25px" alt="">
-              <i class="fab fa-facebook-f"></i></a>
-
-            <!-- Twitter -->
-            <a class="btn btn-light btn-floating m-1" href="#" role="button">
-              <img src="/img/twitter.png" width="25px" alt="">
-              <i class="fab fa-twitter"></i></a>
-
-            <!-- Github -->
-            <a class="btn btn-light btn-floating m-1" href="#" role="button">
-              <img src="/img/giticon.png" width="25px" alt="">
-              <i class="fab fa-github"></i></a>
-          </section>
-          <!-- Section: Social media -->
-
-          <!-- Section: Form -->
-          <section class="">
-            <form action="">
-              <!--Grid row-->
-              <div class="row d-flex justify-content-center">
-                <!--Grid column-->
-                <div class="col-auto">
-                  <p class="pt-2">
-                    <strong>Sign up for our newsletter</strong>
-                  </p>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-5 col-12">
-                  <!-- Email input -->
-                  <div class="form-outline form-white mb-4">
-                    <input type="email" id="form5Example2" class="form-control" />
-                    <label class="form-label" for="form5Example2">Email address</label>
-                  </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-auto">
-                  <!-- Submit button -->
-                  <button type="submit" class="btn btn-outline-light mb-4">
-                    Subscribe
-                  </button>
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row-->
-            </form>
-          </section>
-
-
-          <div class="row m-1">
-            <div class="container">
-              <div class="row">
-
-                <div class="col-md-6">
-
-                  <div class="m-2 p-4 text-justify shadow ">
-
-
-                    <div class="col-xs-12 col-6">
-                      <ul class="list-group">
-                        <li class="list-group-item text-center text-dark m-1">
-                          <a href="#!" class="text-dark">Home</a>
-                        </li>
-                        <li class="list-group-item text-center text-dark m-1">
-                          <a href="#!" class="text-dark">Rover</a>
-                        </li>
-                        <li class="list-group-item text-center text-dark m-1">
-                          <a href="#!" class="text-dark">Uzay</a>
-                        </li>
-                        <li class="list-group-item text-center text-dark  m-1">
-                          <a href="#!" class="text-dark">Uzay Insanlari</a>
-                        </li>
-                      </ul>
-
-                    </div>
-                  </div>
-
-                </div>
-                <div class=" col-md-6">
-                  <div class="m-2 p-4 text-justify shadow ">
-                    <div class="col-xs-12 col-6">
-                      <ul class=" list-group">
-                        <li class=" list-group-item text-center text-dark m-1">
-                          <a href="#!" class="text-dark">Elon Musk</a>
-                        </li>
-                        <li class="text-center list-group-item text-dark m-1">
-                          <a href="#!" class="text-dark">NASA</a>
-                        </li>
-                        <li class="text-center list-group-item text-dark m-1">
-                          <a href="#!" class="text-dark">Uydu</a>
-                        </li>
-
-                        <li class="text-center list-group-item text-dark m-1">
-                          <a href="#!" class="text-dark">Güncel Firlatmalar</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-
-       </div>
-      </footer>
+    </div>
+  </footer>
 
 
 
 
 
-      <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Optional JavaScript; choose one of the two! -->
 
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+<script src="./text.js"></script>
 
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
-      <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
