@@ -13,7 +13,7 @@ window.addEventListener('click',
 
     if(isBlack  && x.target.getAttribute('class') == 'card-title' ){
         isBlack = false
-        x.target.style.background = 'red'
+        x.target.style.background = '#000'
     }else {
         isBlack = true
         x.target.style.background = '#fff'
