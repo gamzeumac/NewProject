@@ -22,3 +22,41 @@ window.addEventListener('click',
   
 }
 )
+
+
+
+fetch('https://avatars.githubusercontent.com/u/77327491?v=4')
+.then(result => {
+    imageUrl = result.url
+    
+    var newDiv = `
+    <img src="${imageUrl}" ></img>
+    `
+
+    document.querySelector('.team').innerHTML = newDiv
+
+})
+fetch('https://avatars.githubusercontent.com/u/77107747?v=4')
+.then(result => {
+    imageUrl = result.url
+    
+    var newDiv = `
+    <img src="${imageUrl}" ></img>
+    `
+
+    document.querySelector('.team1').innerHTML = newDiv
+
+})
+fetch('https://avatars.githubusercontent.com/u/62600527?v=4')
+.then(result => {
+    imageUrl = result.url
+    
+    var newDiv = `
+    <img src="${imageUrl}" ></img>
+    `
+
+    document.querySelector('.team2').innerHTML = newDiv
+
+})
+
+
