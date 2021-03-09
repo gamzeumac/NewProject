@@ -60,3 +60,10 @@ fetch('https://avatars.githubusercontent.com/u/62600527?v=4')
 })
 
 
+
+var Date = moment().format('YYYY-MM-DD');
+var daysInMonth = moment(nowDate, "YYYY-MM-DD").daysInMonth() // 31
+var nowDay = moment(Date).format('DD');
+var endDay = moment(endDateCurrentCampaignSecond).format('DD');
+var thisMonth = moment().month()
+
