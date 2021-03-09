@@ -1,0 +1,22 @@
+{
+  "name": "newproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "text.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamzeumac/NewProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gamzeumac/NewProject/issues"
+  },
+  "homepage": "https://github.com/gamzeumac/NewProject#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
