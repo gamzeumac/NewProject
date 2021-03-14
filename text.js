@@ -1,9 +1,26 @@
 
 
+
+window.addEventListener('scroll',()=>{
+  if(window.scrollY<document.querySelector('#cardId').offsetTop){
+    document.querySelector('#particles-js').style.position = 'fixed'
+  }else{
+    document.querySelector('#particles-js').style.position = 'absolute'
+  }
+})
+
+
+
+
+
+
+
+
+
     particlesJS("particles-js", {
         "particles": {
           "number": {
-            "value": 80,
+            "value": 90,
             "density": {
               "enable": true,
               "value_area": 800
@@ -13,7 +30,7 @@
             "value": "#FFD700"
           },
           "shape": {
-            "type": "circle",
+            "type": "star",
             "stroke": {
               "width": 0,
               "color": "#FFD700"
@@ -32,7 +49,7 @@
             "random": false,
             "anim": {
               "enable": false,
-              "speed": 10,
+              "speed": 15,
               "opacity_min": 0.1,
               "sync": false
             }
@@ -50,8 +67,8 @@
           "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.4,
+            "color": "#FFFF00",
+            "opacity": 1,
             "width": 1
           },
           "move": {
@@ -94,7 +111,7 @@
               "size": 40,
               "duration": 2,
               "opacity": 8,
-              "speed": 3
+              "speed": 5
             },
             "repulse": {
               "distance": 200,
