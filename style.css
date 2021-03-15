@@ -5,3 +5,28 @@ body {
 #Rover .container {
   height: 50vh;
 }
+
+#content {
+    position: absolute;
+    z-index:999;
+    color:rgb(7, 7, 7);
+    font-size:1.5rem;
+padding-top: 56px;
+  }
+  
+  canvas {
+      display        : block;
+
+  }
+  #particles-js {
+      position            : fixed;
+  
+      height              : 100%;
+      width               : 100%;
+  
+      background-color    : rgb(14, 13, 13);
+      background-position : 50% 50%;
+      background-repeat   : no-repeat;
+      background-size     : cover;
+      z-index: -1;
+  }

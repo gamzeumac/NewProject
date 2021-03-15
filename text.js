@@ -1,69 +1,129 @@
-var cardNo1 = document.querySelector('.card1')
-
-
-var isBlack = true;
-
-window.addEventListener('click',
-
- (x)=>{
-
-    console.log(x.target.getAttribute('class'))
-
-    console.log(isBlack)
-
-    if(isBlack  && x.target.getAttribute('class') == 'card-title' ){
-        isBlack = false
-        x.target.style.background = '#000'
-    }else {
-        isBlack = true
-        x.target.style.background = '#fff'
-    }
-
-  
-}
-)
 
 
 
-fetch('https://avatars.githubusercontent.com/u/77327491?v=4')
-.then(result => {
-    imageUrl = result.url
-    
-    var newDiv = `
-    <img src="${imageUrl}" ></img>
-    `
-
-    document.querySelector('.team').innerHTML = newDiv
-
-})
-fetch('https://avatars.githubusercontent.com/u/77107747?v=4')
-.then(result => {
-    imageUrl = result.url
-    
-    var newDiv = `
-    <img src="${imageUrl}" ></img>
-    `
-
-    document.querySelector('.team1').innerHTML = newDiv
-
-})
-fetch('https://avatars.githubusercontent.com/u/62600527?v=4')
-.then(result => {
-    imageUrl = result.url
-    
-    var newDiv = `
-    <img src="${imageUrl}" ></img>
-    `
-
-    document.querySelector('.team2').innerHTML = newDiv
-
+window.addEventListener('scroll',()=>{
+  if(window.scrollY<document.querySelector('#cardId').offsetTop){
+    document.querySelector('#particles-js').style.position = 'fixed'
+  }else{
+    document.querySelector('#particles-js').style.position = 'absolute'
+  }
 })
 
 
 
-var Date = moment().format('YYYY-MM-DD');
-var daysInMonth = moment(nowDate, "YYYY-MM-DD").daysInMonth() // 31
-var nowDay = moment(Date).format('DD');
-var endDay = moment(endDateCurrentCampaignSecond).format('DD');
-var thisMonth = moment().month()
 
+
+
+
+
+
+    particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 90,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#FFD700"
+          },
+          "shape": {
+            "type": "star",
+            "stroke": {
+              "width": 0,
+              "color": "#FFD700"
+            },
+            "polygon": {
+              "nb_sides": 5
+            },
+            "image": {
+              "src": "img/github.svg",
+              "width": 100,
+              "height": 100
+            }
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+              "enable": false,
+              "speed": 15,
+              "opacity_min": 0.1,
+              "sync": false
+            }
+          },
+          "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+              "enable": false,
+              "speed": 40,
+              "size_min": 0.1,
+              "sync": false
+            }
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#FFFF00",
+            "opacity": 1,
+            "width": 1
+          },
+          "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 1200
+            }
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": {
+              "enable": true,
+              "mode": "grab"
+            },
+            "onclick": {
+              "enable": true,
+              "mode": "push"
+            },
+            "resize": true
+          },
+          "modes": {
+            "grab": {
+              "distance": 140,
+              "line_linked": {
+                "opacity": 1
+              }
+            },
+            "bubble": {
+              "distance": 400,
+              "size": 40,
+              "duration": 2,
+              "opacity": 8,
+              "speed": 5
+            },
+            "repulse": {
+              "distance": 200,
+              "duration": 0.4
+            },
+            "push": {
+              "particles_nb": 4
+            },
+            "remove": {
+              "particles_nb": 2
+            }
+          }
+        },
+        "retina_detect": true
+      });
