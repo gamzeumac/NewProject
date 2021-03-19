@@ -1,6 +1,5 @@
 
 
-
 window.addEventListener('scroll',()=>{
   if(window.scrollY<document.querySelector('#cardId').offsetTop){
     document.querySelector('#particles-js').style.position = 'fixed'
@@ -33,7 +32,7 @@ window.addEventListener('scroll',()=>{
             "type": "star",
             "stroke": {
               "width": 0,
-              "color": "#FFD700"
+              "color": "#FFFF00"
             },
             "polygon": {
               "nb_sides": 5
@@ -67,7 +66,7 @@ window.addEventListener('scroll',()=>{
           "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#FFFF00",
+            "color": "#FFD700",
             "opacity": 1,
             "width": 1
           },
