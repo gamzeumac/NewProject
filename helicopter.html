@@ -20,19 +20,18 @@
 .helicopter {
     background: url('img/helicopter.jpg') no-repeat center center fixed #000;
     background-size: cover;
-    margin: 0;
+    margin: 0px;
     padding-left: 0px;
-    text-align: justify;
+    
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   width: 10%;
   position: fixed;
   height: 100%;
-  overflow: auto;
+  
 }
 
 li a {
@@ -59,13 +58,15 @@ section {
      font-size: 50px;
      text-align: center;
      padding: 30px 0px 0px 0px;
+     filter: alpha(opacity=20);
+     opacity: 0.5;
  }
 
 
- table {
+ .watch_online {
   border-collapse: collapse;
   width: 350px;
-  height: 350px;
+  height: 470px;
   text-align: center;
   border: 1px solid #c22424;
 }
@@ -74,6 +75,7 @@ th {
   border: 2px solid #c22424;
   padding: 8px;
   height: 50px;
+  background-color:rgba(166, 217, 240, 0.501);
 }
 
 td {
@@ -85,16 +87,17 @@ td {
 
 .container {
   display: flex;
-  font-size: 13px;
- 
+  font-size: 14px;
+  
+  
  
 }
 .item {
- 
-  background: #f3edd6;
   border: 5px solid #b59214;
   color: #000000;
   text-align: center;
+  background-color:rgba(166, 217, 240, 0.501);
+ 
 }
 
 
@@ -129,15 +132,15 @@ td {
 
 <section class="page1">
 <h1 id="about">About</h1>
+
+
 </section>
+
 
 
 <section class="page2">
 <h1 id="features">Features</h1>
 </section>
-
-
-
 
 
 
@@ -155,7 +158,7 @@ td {
 
   <iframe width="350" height="300" src="https://www.youtube.com/embed/WK5YXZIIEKU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
-  <table>
+  <table class="watch_online">
 
     <tr>
       <th>Date</th>
@@ -187,7 +190,7 @@ td {
 <div class="item">
 <h3>Helicopter Video Game</h3>
 <iframe width="350" height="300" src="https://www.youtube.com/embed/jmhCIxnWdEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h3> <a href="https://www.jpl.nasa.gov/edu/learn/project/code-a-mars-helicopter-video-game/">Code a Mars Helicopter Video Game</a> </h3>
+<h5> <a href="https://www.jpl.nasa.gov/edu/learn/project/code-a-mars-helicopter-video-game/">Code a Mars Helicopter Video Game</a> </h5>
 <p>In this episode of Learning Space, you'll create a video game that lets players explore the Red Planet with a helicopter like the one going to Mars with NASA's Perseverance rover! </p>
 </div>
 
@@ -201,7 +204,7 @@ td {
 
 <p>
 
-<h3>Ingenuity Mars Helicopter on the Martian Surface (Artist's Concept)</h3>
+<h5>Ingenuity Mars Helicopter on the Martian Surface (Artist's Concept)</h5>
   
 <h5>July 14, 2020</h5>
 
@@ -226,7 +229,7 @@ For more information about the Mars 2020 Perseverance mission, go to: https://ma
 
 
 <p>
-  <h3>The first helicopter on Mars phones home after Perseverance rover landing</h3>
+  <h5>The first helicopter on Mars phones home after Perseverance rover landing</h5>
   The Ingenuity helicopter has reported in from the Red Planet.
 
   The first helicopter ever sent to another world is doing just fine on Mars after surviving a "seven minutes of terror" landing aboard NASA's Perseverance.
@@ -244,7 +247,7 @@ For more information about the Mars 2020 Perseverance mission, go to: https://ma
 </section>
 
 
-<
+
   
 
 </body>
