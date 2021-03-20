@@ -1,224 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wasser auf dem Mond</title>
+  <style>
+    .flex-container1{
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(44, 149, 153);
+      height: 50px;
+      width: 100%;
+    }
+    .flex-container1 a{
+      margin-top: 10px;
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+    }
+    .navbar{
+      display: flex;
+      justify-content: space-around; 
+      height: 90px;
+      background-color: rgb(80, 76, 76);
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    }
+    .navbar img{
+      margin-left: -250px;
+    }
+    .navbar ul{
+      margin-right: -200px;
+    }
+    .navbar ul li{
+      list-style: none;
+      font-family: sans-serif;
+      display: inline-block;
+      margin: 0 8px;
+      margin-top: 15px;
+    }
+    .navbar ul li a{
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    .navbar ul li a.button,
+    .navbar ul li a:hover{
+      background: #d3c6ba;
+      border-radius: 2px;
+    }
+    .flex-container1 a:hover{
+      background: #d3c6ba;
+      height: 25px;
+      border-radius: 2px;
+    }
+    .center{
+      display: flex;
+      background: url(img/moon-415501__340.webp);
+      width: 100%;
+      height: 800px;
+    }
+    .center p{
+      color: white;
+      font-family: sans-serif;
+    }
 
-
-  <link rel="stylesheet" href="/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-  <title>Uzay</title>
+  </style>
 </head>
-
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-toggler">
-    <div class="container">
-      <a class="navbar-brand" href="./index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-
-            <a class="nav-link" href="./rover.html">Mars</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-              aria-expanded="false">Perseverance</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./roket.html">Rover</a></li>
-              <li><a class="dropdown-item" href="./rover.html">Mini Helikopter</a></li>
-              <li><a class="dropdown-item" href="./aydasu.html">Insight Lander</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="./rover.html">Mars</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-
-  <div id="particles-js"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 d-flex flex-column justify-content-center align-items-center bg-info ">
-        <div class="text-center">
-          <h1>UZAY PROJEKT</h1>
-
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer id="Contact">
-      <div class="bg-dark text-center text-white">
-  
-        <div class="container p-12">
-  
-          <section class="m-4">
-            <!-- Facebook -->
-            <a class="btn btn-light btn-floating m-1" href="#" role="button">
-              <img src="/img/iconfinder_facebook.png" width="25px" alt="">
-              <i class="fab fa-facebook-f"></i></a>
-  
-            <!-- Twitter -->
-            <a class="btn btn-light btn-floating m-1" href="#" role="button">
-              <img src="/img/twitter.png" width="25px" alt="">
-              <i class="fab fa-twitter"></i></a>
-  
-            <!-- Github -->
-            <a class="btn btn-light btn-floating m-1" href="#" role="button">
-              <img src="/img/giticon.png" width="25px" alt="">
-              <i class="fab fa-github"></i></a>
-          </section>
-          <!-- Section: Social media -->
-  
-          <!-- Section: Form -->
-          <section class="">
-            <form action="">
-              <!--Grid row-->
-              <div class="row d-flex justify-content-center">
-                <!--Grid column-->
-                <div class="col-auto">
-                  <p class="pt-2">
-                    <strong>Sign up for our newsletter</strong>
-                  </p>
-                </div>
-                <!--Grid column-->
-  
-                <!--Grid column-->
-                <div class="col-md-5 col-12">
-                  <!-- Email input -->
-                  <div class="form-outline form-white mb-4">
-                    <input type="email" id="form5Example2" class="form-control" />
-                    <label class="form-label" for="form5Example2">Email address</label>
-                  </div>
-                </div>
-                <!--Grid column-->
-  
-                <!--Grid column-->
-                <div class="col-auto">
-                  <!-- Submit button -->
-                  <button type="submit" class="btn btn-outline-light mb-4">
-                    Subscribe
-                  </button>
-                </div>
-                <!--Grid column-->
-              </div>
-              <!--Grid row-->
-            </form>
-          </section>
+  <div class="flex-container1">
+    <a href="#" class="button">Auf dem Mond surfen</a>
+    <form class="arama" action="search" name="suchbox" method="POST">
+      <input type="text" name="search" placeholder="search"/>
+      <input type="submit" name="send" value="send"/>
+    </form> 
+  </div>
+  <div class="navbar">
+    <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" >
+    <ul>
+      <li><a href="#" class="button">About the Moon</a></li>
+      <li><a href="#">Observe</a></li>
+      <li><a href="#">Exploration</a></li>
+      <li><a href="#">Galleries</a></li>
+      <li><a href="#">News</a></li>
+    </ul>
+  </div>
+  <div class="center">
+    <button class="button1">1</button>
+    <button class="button2">2</button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, totam!
+    </p>
+  </div>
+  <div class="more">
+    <p>more</p>
+    
+  </div>
   
   
-          <div class="row m-1">
-            <div class="container">
-              <div class="row">
-  
-                <div class="col-md-6">
-  
-                  <div class="m-2 p-4 text-justify shadow ">
-  
-  
-                    <div class="col-xs-12 col-6">
-                      <ul class="list-group">
-                        <li class="list-group-item text-center text-dark m-1">
-                          <a href="./index.html" class="text-dark">Home</a>
-                        </li>
-                        <li class="list-group-item text-center text-dark m-1">
-                          <a href="./rover.html" class="text-dark">Rover</a>
-                        </li>
-                        <li class="list-group-item text-center text-dark m-1">
-                          <a href="./roket.html" class="text-dark">Uzay</a>
-                        </li>
-  
-                      </ul>
-  
-                    </div>
-                  </div>
-  
-                </div>
-                <div class=" col-md-6">
-                  <div class="m-2 p-4 text-justify shadow ">
-                    <div class="col-xs-12 col-6">
-                      <ul class=" list-group">
-                        <li class=" list-group-item text-center text-dark m-1">
-                          <a href="https://tr.wikipedia.org/wiki/Elon_Musk" class="text-dark">Elon Musk</a>
-                        </li>
-                        <li class="text-center list-group-item text-dark m-1">
-                          <a href="https://www.nasa.gov/" class="text-dark">NASA</a>
-                        </li>
-  
-                        <li class="text-center list-group-item text-dark m-1">
-                          <a href="https://www.nasa.gov/topics/humans-in-space" class="text-dark">Uzaydaki Insanlar</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-  
-              </div>
-  
-            </div>
-          </div>
-        </div>
-  
-  
-      </div>
-    </footer>
-  
-
-  
-    </div>
-  
-  
-  
-  
-  
-  
-    <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436720/particles.js"></script>
-    <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"></script>
-    <script src="./text.js"></script>
-  
-  
-  
-  
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-      -->
-    </div>
-  </body>
-  
-  </html>
+</body>
+</html>
