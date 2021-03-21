@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wasser auf dem Mond</title>
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <style>
     .flex-container1{
       display: flex;
@@ -63,7 +64,8 @@
       background: url(img/moon-415501__340.webp);
       background-size: cover;
       width: 100%;
-      height: 800px;
+      height: 825px;
+      
     }
     .center p{
       color: white;
@@ -93,27 +95,64 @@
       top: 50%;
       font-family:'ionicons';
       content: '\f30f';
-      
     }
-    .more{
-      background: rgb(44, 149, 153);
-      width: 100%;
-      height:30px;
+    .searchbox{
+      background: #cca421;
+      border-radius: 6px;
+      height: 40px;
+      display: flex;
+      margin-top: 10px;
+      margin-right: 50px;
+      align-items: center;
+      padding: 5px;
     }
-    .more p{
+    .searchbox a{
+      color: rgb(80, 76, 76);
+      background:white;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 150%;
+      margin-right: 10px;
+      margin-top: -5px;
+      border-radius: 50%;
+    }
+    .searchbox input{
+      width: 250px;
+      height: 25px;
+      border-radius: 10%;
+      font-family: sans-serif;
       font-size: 20px;
-      margin-left: 900px;
+      border: none;
+      background: none;
+      color: white;
+      padding: 0;
+      width: 0;
+      transition: 0.2s ease-in;
     }
- 
+    .searchbox:hover >input{
+      width: 200px;
+      padding: 0 12px;
+    }
+    .searchbox:hover>a{
+      background: transparent;
+      color: gray;
+    }
   </style>
 </head>
 <body>
   <div class="flex-container1">
     <a href="#" class="button">Auf dem Mond surfen</a>
-    <form class="arama" action="search" name="suchbox" method="POST">
-      <input type="text" name="search" placeholder="search"/>
-      <input type="submit" name="send" value="send"/>
-    </form> 
+    <div class="searchbox">
+      <input type="text" placeholder="search">
+      <a href="#">
+        <i class="fas fa-search"></i>"
+      </a> 
+
+    </div>
   </div>
   <div class="navbar">
     <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" >
@@ -130,10 +169,6 @@
     <button class="button2"></button>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel commodi repellendus at veniam, consectetur voluptatibus. Quis eveniet ipsa nihil porro corporis cumque doloribus excepturi illum dicta vitae omnis aperiam et voluptatibus, laboriosam earum soluta sapiente fugit eaque repudiandae ullam delectus. Quisquam dicta tenetur laborum quas delectus facilis porro laboriosam sunt.
     </p>
-  </div>
-  <div class="more">
-    <p>more</p>
-    
   </div>
   
   
