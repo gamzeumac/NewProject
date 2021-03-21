@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wasser auf dem Mond</title>
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
   <style>
     .flex-container1{
       display: flex;
@@ -39,15 +40,17 @@
       display: inline-block;
       margin: 0 8px;
       margin-top: 15px;
+      
     }
     .navbar ul li a{
       color: white;
       text-decoration: none;
       font-size: 20px;
+      transition: 0.5s;
     }
     .navbar ul li a.button,
     .navbar ul li a:hover{
-      background: #d3c6ba;
+      background: #d3991c;
       border-radius: 2px;
     }
     .flex-container1 a:hover{
@@ -58,14 +61,50 @@
     .center{
       display: flex;
       background: url(img/moon-415501__340.webp);
+      background-size: cover;
       width: 100%;
       height: 800px;
     }
     .center p{
       color: white;
       font-family: sans-serif;
+      font-size: 20px;
+      flex-direction: column;
+      width: 500px;
+      margin-top: 500px;
+      margin-left: 50px;
     }
+    .button1{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background:none;
+      top: 50%;
+      font-family:'ionicons';
+      content:\f2ca;
 
+    }
+    .button2{
+      width: 50px;
+      height: 50px;
+      background: none;
+      position: absolute;
+      margin-left: 1850px;
+      top: 50%;
+      font-family:'ionicons';
+      content: '\f30f';
+      
+    }
+    .more{
+      background: rgb(44, 149, 153);
+      width: 100%;
+      height:30px;
+    }
+    .more p{
+      font-size: 20px;
+      margin-left: 900px;
+    }
+ 
   </style>
 </head>
 <body>
@@ -87,9 +126,9 @@
     </ul>
   </div>
   <div class="center">
-    <button class="button1">1</button>
-    <button class="button2">2</button>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, totam!
+    <button class="button1"></button>
+    <button class="button2"></button>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel commodi repellendus at veniam, consectetur voluptatibus. Quis eveniet ipsa nihil porro corporis cumque doloribus excepturi illum dicta vitae omnis aperiam et voluptatibus, laboriosam earum soluta sapiente fugit eaque repudiandae ullam delectus. Quisquam dicta tenetur laborum quas delectus facilis porro laboriosam sunt.
     </p>
   </div>
   <div class="more">
