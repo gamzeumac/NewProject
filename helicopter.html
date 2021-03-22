@@ -1,156 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    
-    <title>Helicopter</title>
 
-    <style>
+  <title>Helicopter</title>
 
-      body { 
-        background-color: rgb(252, 196, 112);
-        
-      }
+  <style>
+    body {
+      background-color: rgb(252, 196, 112);
 
-.helicopter {
-    background: url('img/helicopter.jpg') no-repeat center center fixed #000;
-    background-size: cover;
-    margin: 0px;
-    padding-left: 0px;
-    
+    }
+
+    .helicopter {
+      background: url('img/helicopter.jpg') no-repeat center center fixed #000;
+      background-size: cover;
+      margin: 0px;
+      padding-left: 0px;
+
+    }
+
+    ul.navi-yan {
+      margin: 0;
+      padding: 0;
+      width: 10%;
+      position: fixed;
+      height: 100%;
+
+    }
+
+    li a {
+      display: block;
+      font-size: 30px;
+      color: rgb(121, 11, 11);
+      padding: 40px 20px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #ebbf85;
+      color: white;
+    }
+
+    section {
+
+      width: 100%;
+      height: 976px;
+      padding-left: 200px;
+    }
+
+    h1 {
+      color: black;
+      font-size: 50px;
+      text-align: center;
+      padding: 60px 0px 0px 0px;
+      filter: alpha(opacity=20);
+      opacity: 0.5;
+    }
+
+
+    .ingenuity {
+      color: black;
+      border: 3px solid #c22424;
+      font-size: 20px;
+      width: 80%;
+      margin-left: 150px;
+      margin-bottom: 30px;
+      background-color: rgb(224, 199, 199);
+    }
+
+
+    .tab1 {
+      padding: 10px 10px 10px 30px;
+
+    }
+
+
+
+    .container1 {
+      display: flex;
+      font-size: 18px;
+
+    }
+
+    .page-item {
+      border: 3px solid #b59214;
+      color: #000000;
+      text-align: justify;
+      padding: 15px;
+      width: 35%;
+      margin-left: 150px;
+      margin-right: 15px;
+      background-color: rgb(247, 240, 240);
+    }
+
+
+
+
+    .item-2 {
+      font-size: 20px;
+      text-align: justify;
+      padding: 20px;
+      margin-left: 20px;
+
+    }
+
+
+
+
+    #watch_online {
+      border-collapse: collapse;
+      width: 350px;
+      height: 470px;
+      text-align: center;
+      border: 1px solid #c22424;
+    }
+
+    tr.online_head {
+      border: 2px solid #c22424;
+      padding: 8px;
+      height: 50px;
+      background-color: rgba(166, 217, 240, 0.501);
+    }
+
+    tr.online_linea {
+      background-color: #dba83b;
+      border: 2px solid #c22424;
+      padding: 8px;
+    }
+
+    .online {
+      border: 2px solid #c22424;
+    }
+
+
+    .container2 {
+      display: flex;
+      font-size: 14px;
+      margin: 10px;
+    }
+
+    .item {
+      border: 5px solid #b59214;
+      color: #000000;
+      text-align: center;
+      background-color: rgba(166, 217, 240, 0.501);
+      padding: 5px;}
+
+footer {
+  width: 100%;
+  height: 500px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  width: 10%;
-  position: fixed;
-  height: 100%;
-  
-}
-
-li a {
-  display: block;
-  font-size: 30px;
-  color: rgb(121, 11, 11);
-  padding: 40px 20px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #ebbf85;
-  color: white;
-}
-
-section {
-    
-    width: 100%;
-    height: 976px;
-    padding-left: 200px;
-}
- h1 {
-     color: black;
-     font-size: 50px;
-     text-align: center;
-     padding: 30px 0px 0px 0px;
-     filter: alpha(opacity=20);
-     opacity: 0.5;
- }
-
-
- .ingenuity {
-   color: black;
-   border: 3px solid #c22424;
-   font-size: 20px;
-   width: 80%;
-   margin-left: 150px;
-   margin-bottom: 30px;
-   background-color: rgb(224, 199, 199);
-   }
-
-
-.tab1 {
-  padding: 10px 10px 10px 30px;
-  
-}
-
-
-
-.container1 {
-  display: flex;
-  font-size: 18px;
- 
-}
-
-.page-item {
-  border: 3px solid #b59214;
-  color: #000000;
-  text-align: justify;
-  padding: 15px;
-  width: 35%;
-  margin-left: 150px;
-  margin-right: 15px;
-  background-color: rgb(247, 240, 240);
-}
 
 
 
 
-.item-2 {
-font-size: 20px;
-text-align: justify;
-padding: 20px;
-margin-left: 20px;
-
-}
 
 
 
-
- #watch_online {
-  border-collapse: collapse;
-  width: 350px;
-  height: 470px;
-  text-align: center;
-  border: 1px solid #c22424;
-  }
-
-tr.online_head {
-  border: 2px solid #c22424;
-  padding: 8px;
-  height: 50px;
-  background-color:rgba(166, 217, 240, 0.501);
-}
-
-tr.online_linea {
-  background-color: #dba83b;
-  border: 2px solid #c22424;
-  padding: 8px;
-}
-
-.online {
-  border: 2px solid #c22424;
-}
-
-
-.container {
-  display: flex;
-  font-size: 14px;
-  margin: 10px;
-}
-
-.item {
-  border: 5px solid #b59214;
-  color: #000000;
-  text-align: center;
-  background-color:rgba(166, 217, 240, 0.501);
-  padding: 5px;
-</style>
+  </style>
 
 </head>
 
@@ -158,222 +172,307 @@ tr.online_linea {
 
 <body>
 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-toggler">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+
+            <a class="nav-link" href="./rover.html">Mars</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Perseverance</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./roket.html">Rover</a></li>
+              <li><a class="dropdown-item" href="./roket.html">Roket</a></li>
+              <li><a class="dropdown-item" href="./rover.html">Mini Helikopter</a></li>
+              <li><a class="dropdown-item" href="./aydasu.html">Insight Lander</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
   <section class="helicopter">
+
+
     
-<nav id="navigation">
-
-<h1 class="mini_helicopter">Mini Helicopter</h1>
 
 
-    <ul>
+    <nav id="navigation">
+
+      <h1 class="mini_helicopter">Mini Helicopter</h1>
+
+
+      <ul class="navi-yan">
         <li><a href="#navigation">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#media">Media</a></li>  
-    </ul>
+        <li><a href="#media">Media</a></li>
+      </ul>
 
-</nav>
-</section>  
+    </nav>
+  </section>
 
 
-<section class="page1">
-<h1 id="about">About</h1>
+  <section class="page1">
+    <h1 id="about">About</h1>
 
-<table class="ingenuity">
-<tr>
-<th class="tab1">Name</th>
-<td><a href="https://mars.nasa.gov/news/8659/alabama-high-school-student-names-nasas-mars-helicopter/">Ingenuity</a> </td>
-</tr>
-<tr>
-<th class="tab1">Main Job</th>
-<td>A technology demonstration to test the first powered flight on Mars. The helicopter rode to Mars attached to the belly of the <a href="https://mars.nasa.gov/mars2020/">Perseverance rover</a>.</td>
-</tr>
-<tr>
-<th class="tab1">Launch</th>
-<td>July 30, 2020, Cape Canaveral Air Force Station, Florida</td>
-</tr>
-<tr>
-<th class="tab1">Landed</th>
-<td>Feb. 18, 2021, Jezero Crater, Mars</td>
-</tr>
-<tr>
-<th class="tab1">Length of Mission</th>
-<td>One or more flights within 30 days</td>
-</tr>
-</table>
+    <table class="ingenuity">
+      <tr>
+        <th class="tab1">Name</th>
+        <td><a
+            href="https://mars.nasa.gov/news/8659/alabama-high-school-student-names-nasas-mars-helicopter/">Ingenuity</a>
+        </td>
+      </tr>
+      <tr>
+        <th class="tab1">Main Job</th>
+        <td>A technology demonstration to test the first powered flight on Mars. The helicopter rode to Mars attached to
+          the belly of the <a href="https://mars.nasa.gov/mars2020/">Perseverance rover</a>.</td>
+      </tr>
+      <tr>
+        <th class="tab1">Launch</th>
+        <td>July 30, 2020, Cape Canaveral Air Force Station, Florida</td>
+      </tr>
+      <tr>
+        <th class="tab1">Landed</th>
+        <td>Feb. 18, 2021, Jezero Crater, Mars</td>
+      </tr>
+      <tr>
+        <th class="tab1">Length of Mission</th>
+        <td>One or more flights within 30 days</td>
+      </tr>
+    </table>
 
 
-<div class="container1">
-  <div class="page-item">
+    <div class="container1">
+      <div class="page-item">
 
-<p>NASA's Mars helicopter, named Ingenuity, successfully powered up for the first time in space last week.
+        <p>NASA's Mars helicopter, named Ingenuity, successfully powered up for the first time in space last week.
 
-  Ingenuity is the first helicopter designed to fly on another planet. It is currently travelling to the Red Planet aboard NASA's Mars 2020 Perseverance rover, which launched on July 30. 
-  
-  On Aug. 7, the helicopter's six lithium-ion batteries were powered up and charged for the first time in space. The 4-lb. (1.8 kilograms) Ingenuity, which is currently stowed beneath Perseverance's belly, receives its charge from the rover's power supply, according to a Thursday (Aug. 13) statement from NASA. "This was a big milestone, as it was our first opportunity to turn on Ingenuity and give its electronics a 'test drive' since we launched on July 30," Tim Canham, the operations lead for Mars Helicopter at NASA's Jet Propulsion Laboratory (JPL) in Southern California, said in the statement.
-  
-  </p>
-</div>
+          Ingenuity is the first helicopter designed to fly on another planet. It is currently travelling to the Red
+          Planet aboard NASA's Mars 2020 Perseverance rover, which launched on July 30.
 
-<div class="page-item">
-  "Since everything went by the book, we'll perform the same activity about every two weeks to maintain an acceptable state of charge."
+          On Aug. 7, the helicopter's six lithium-ion batteries were powered up and charged for the first time in space.
+          The 4-lb. (1.8 kilograms) Ingenuity, which is currently stowed beneath Perseverance's belly, receives its
+          charge from the rover's power supply, according to a Thursday (Aug. 13) statement from NASA. "This was a big
+          milestone, as it was our first opportunity to turn on Ingenuity and give its electronics a 'test drive' since
+          we launched on July 30," Tim Canham, the operations lead for Mars Helicopter at NASA's Jet Propulsion
+          Laboratory (JPL) in Southern California, said in the statement.
 
-  Charging the batteries took eight hours, during which NASA tested and analyzed their performance. The batteries were charged only to 35% of their maximum level, in order to maintain optimal battery health, according to the statement.  
-  
-  Perseverance is scheduled to land on Mars on Feb. 18, 2021. At some point after that, Ingenuity will detach from the rover, descend to the Red Planet surface and take a few pioneering test flights. (After deployment on Mars, the helicopter's batteries will be charged by its own solar panel.)
-  
-  If the experimental test flights go according to plan, Ingenuity will prove that robotic flight is possible on Mars, opening the door for extensive aerial exploration on future missions. 
+        </p>
+      </div>
 
-</div>
+      <div class="page-item">
+        "Since everything went by the book, we'll perform the same activity about every two weeks to maintain an
+        acceptable state of charge."
 
+        Charging the batteries took eight hours, during which NASA tested and analyzed their performance. The batteries
+        were charged only to 35% of their maximum level, in order to maintain optimal battery health, according to the
+        statement.
 
-</div>
+        Perseverance is scheduled to land on Mars on Feb. 18, 2021. At some point after that, Ingenuity will detach from
+        the rover, descend to the Red Planet surface and take a few pioneering test flights. (After deployment on Mars,
+        the helicopter's batteries will be charged by its own solar panel.)
 
-</section>
+        If the experimental test flights go according to plan, Ingenuity will prove that robotic flight is possible on
+        Mars, opening the door for extensive aerial exploration on future missions.
 
+      </div>
 
 
-<section class="page2">
-<h1 id="features">Features</h1>
+    </div>
 
-<div class="container">
+  </section>
 
-<div class="item-1">
 
-<img src="img/helicopterstyle.png" alt="helicoptersplan" width="700" height="800">
 
-</div>
+  <section class="page2">
+    <h1 id="features">Features</h1>
 
-<div class="item-2">
-<p>Taking Flight on Another World
-  Mars Helicopter with Perseverance rover in the background
-  The Mars Helicopter, Ingenuity, is a technology demonstration to test powered flight on another world for the first time. It hitched a ride to Mars on the Perseverance rover. Once the rover reaches a suitable "helipad" location, it will release Ingenuity to perform a series of test flights over a 30-Martian-day experimental window beginning sometime in the spring.
-  
-  For the first flight, the helicopter will take off a few feet from the ground, hover in the air for about 20 to 30 seconds, and land. That will be a major milestone: the very first powered flight in the extremely thin atmosphere of Mars. After that, the team will attempt additional experimental flights of incrementally farther distance and greater altitude. After the helicopter completes its technology demonstration, Perseverance will continue its scientific mission.</p>
+    <div class="container2">
 
+      <div class="item-1">
 
-</div>
+        <img src="img/helicopterstyle.png" alt="helicoptersplan" width="700" height="800">
 
+      </div>
 
+      <div class="item-2">
+        <p>Taking Flight on Another World
+          Mars Helicopter with Perseverance rover in the background
+          The Mars Helicopter, Ingenuity, is a technology demonstration to test powered flight on another world for the
+          first time. It hitched a ride to Mars on the Perseverance rover. Once the rover reaches a suitable "helipad"
+          location, it will release Ingenuity to perform a series of test flights over a 30-Martian-day experimental
+          window beginning sometime in the spring.
 
-</div>
+          For the first flight, the helicopter will take off a few feet from the ground, hover in the air for about 20
+          to 30 seconds, and land. That will be a major milestone: the very first powered flight in the extremely thin
+          atmosphere of Mars. After that, the team will attempt additional experimental flights of incrementally farther
+          distance and greater altitude. After the helicopter completes its technology demonstration, Perseverance will
+          continue its scientific mission.</p>
 
-</section>
 
+      </div>
 
 
 
+    </div>
 
-<section class="page3">
+  </section>
 
-<h1 id="media">Media</h1>
 
-<div class="container">
 
-<div class="item">
 
-  <h3>Watch Online</h3>
 
-  <iframe width="350" height="300" src="https://www.youtube.com/embed/WK5YXZIIEKU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
-  <table id="watch_online">
+  <section class="page3">
 
-    <tr class="online_head">
-      <th class="online">Date</th>
-      <th class="online">Title</th>
-      <th class="online">Channel</th>
-    </tr>
-    <tr class="online_linea">
-      <td class="online"> <strong>March 23, 2021</strong> 
-        10:30 a.m. PDT /
-        1:30 p.m. EDT</td>
-      <td class="online"><strong>News Briefing: Preview First Mars Helicopter Flights</strong> <br>
-        <a href="https://mars.nasa.gov/news/8891/nasa-to-host-briefing-to-preview-first-mars-helicopter-flights/"> Read release › </a>
-        <br><br>
-        Channels that will carry the broadcast include:
-        <a href="https://www.youtube.com/watch?v=WK5YXZIIEKU">YouTube</a>, <a href="https://www.facebook.com/NASAJPL/">Facebook</a> , <a href="https://www.nasa.gov/multimedia/nasatv/#public">NASA Television</a> , and <a href="https://www.nasa.gov/connect/apps.html">NASA App</a> </td>
-      <td class="online"><a href="https://www.youtube.com/watch?v=WK5YXZIIEKU">Watch on YouTube</a> 
-        NASA JPL</td>
-    </tr>
+    <h1 id="media">Media</h1>
 
+    <div class="container2">
 
-  </table>
-  
-  
-  </div>
+      <div class="item">
 
+        <h3>Watch Online</h3>
 
+        <iframe width="350" height="300" src="https://www.youtube.com/embed/WK5YXZIIEKU" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
 
+        <table id="watch_online">
 
-<div class="item">
-<h3>Helicopter Video Game</h3>
-<iframe width="350" height="300" src="https://www.youtube.com/embed/jmhCIxnWdEQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h5> <a href="https://www.jpl.nasa.gov/edu/learn/project/code-a-mars-helicopter-video-game/">Code a Mars Helicopter Video Game</a> </h5>
-<p>In this episode of Learning Space, you'll create a video game that lets players explore the Red Planet with a helicopter like the one going to Mars with NASA's Perseverance rover! </p>
-</div>
+          <tr class="online_head">
+            <th class="online">Date</th>
+            <th class="online">Title</th>
+            <th class="online">Channel</th>
+          </tr>
+          <tr class="online_linea">
+            <td class="online"> <strong>March 23, 2021</strong>
+              10:30 a.m. PDT /
+              1:30 p.m. EDT</td>
+            <td class="online"><strong>News Briefing: Preview First Mars Helicopter Flights</strong> <br>
+              <a href="https://mars.nasa.gov/news/8891/nasa-to-host-briefing-to-preview-first-mars-helicopter-flights/">
+                Read release › </a>
+              <br><br>
+              Channels that will carry the broadcast include:
+              <a href="https://www.youtube.com/watch?v=WK5YXZIIEKU">YouTube</a>, <a
+                href="https://www.facebook.com/NASAJPL/">Facebook</a> , <a
+                href="https://www.nasa.gov/multimedia/nasatv/#public">NASA Television</a> , and <a
+                href="https://www.nasa.gov/connect/apps.html">NASA App</a> </td>
+            <td class="online"><a href="https://www.youtube.com/watch?v=WK5YXZIIEKU">Watch on YouTube</a>
+              NASA JPL</td>
+          </tr>
 
 
+        </table>
 
 
+      </div>
 
-<div class="item">
-<h3>Mars Helicopter-1</h3>
-<img src="img/helicopter2.jpg" alt="mini-helicopter" width="350" height="300">
 
-<p>
 
-<h5>Ingenuity Mars Helicopter on the Martian Surface (Artist's Concept)</h5>
-  
-<h5>July 14, 2020</h5>
 
-In this artist's concept, NASA's Ingenuity Mars Helicopter stands on the Red Planet's surface as NASA's Mars 2020 Perseverance rover (partially visible on the left) rolls away.
+      <div class="item">
+        <h3>Helicopter Video Game</h3>
+        <iframe width="350" height="300" src="https://www.youtube.com/embed/jmhCIxnWdEQ" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <h5> <a href="https://www.jpl.nasa.gov/edu/learn/project/code-a-mars-helicopter-video-game/">Code a Mars
+            Helicopter Video Game</a> </h5>
+        <p>In this episode of Learning Space, you'll create a video game that lets players explore the Red Planet with a
+          helicopter like the one going to Mars with NASA's Perseverance rover! </p>
+      </div>
 
-Ingenuity, a technology experiment, will be the first aircraft to attempt controlled flight on another planet. It will arrive on Mars on Feb. 18, 2021, attached to the belly of NASA's Perseverance rover. Perseverance will deploy Ingenuity onto the surface of Mars, and Ingenuity is expected to attempt its first flight test in spring 2021.
 
-NASA's Jet Propulsion Laboratory built and will manage operations of Perseverance and Ingenuity for the agency. Caltech in Pasadena, California, manages JPL for NASA.
 
-For more information about Ingenuity, go to: https://mars.nasa.gov/technology/helicopter
 
-For more information about the Mars 2020 Perseverance mission, go to: https://mars.nasa.gov/perseverance
-</p>
 
-</div>
+      <div class="item">
+        <h3>Mars Helicopter-1</h3>
+        <img src="img/helicopter2.jpg" alt="mini-helicopter" width="350" height="300">
 
+        <p>
 
+          <h5>Ingenuity Mars Helicopter on the Martian Surface (Artist's Concept)</h5>
 
-<div class="item">
-  <h3>Mars Helicopter-2</h3>
-<img src="img/helicopter3.jpg" alt="mini-helicopter" width="350" height="300">
+          <h5>July 14, 2020</h5>
 
+          In this artist's concept, NASA's Ingenuity Mars Helicopter stands on the Red Planet's surface as NASA's Mars
+          2020 Perseverance rover (partially visible on the left) rolls away.
 
-<p>
-  <h5>The first helicopter on Mars phones home after Perseverance rover landing</h5>
-  The Ingenuity helicopter has reported in from the Red Planet.
+          Ingenuity, a technology experiment, will be the first aircraft to attempt controlled flight on another planet.
+          It will arrive on Mars on Feb. 18, 2021, attached to the belly of NASA's Perseverance rover. Perseverance will
+          deploy Ingenuity onto the surface of Mars, and Ingenuity is expected to attempt its first flight test in
+          spring 2021.
 
-  The first helicopter ever sent to another world is doing just fine on Mars after surviving a "seven minutes of terror" landing aboard NASA's Perseverance.
+          NASA's Jet Propulsion Laboratory built and will manage operations of Perseverance and Ingenuity for the
+          agency. Caltech in Pasadena, California, manages JPL for NASA.
 
-  The Ingenuity helicopter, which landed on Mars with Perseverance on Thursday (Feb. 18), is awake and communicating with controllers on Earth.
-  
-  Controllers at NASA's Jet Propulsion Laboratory (JPL) received a downlink on Friday at 6:30 p.m. EST (2330 GMT) through the Mars Reconnaissance Orbiter, indicating the 4-lb. (2 kilograms) helicopter and its base station are both operating normally.
-  
-  </p>
+          For more information about Ingenuity, go to: https://mars.nasa.gov/technology/helicopter
 
-</div>
+          For more information about the Mars 2020 Perseverance mission, go to: https://mars.nasa.gov/perseverance
+        </p>
 
-</div>
+      </div>
 
-</section>
 
 
-<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436720/particles.js"></script>
+      <div class="item">
+        <h3>Mars Helicopter-2</h3>
+        <img src="img/helicopter3.jpg" alt="mini-helicopter" width="350" height="300">
+
+
+        <p>
+          <h5>The first helicopter on Mars phones home after Perseverance rover landing</h5>
+          The Ingenuity helicopter has reported in from the Red Planet.
+
+          The first helicopter ever sent to another world is doing just fine on Mars after surviving a "seven minutes of
+          terror" landing aboard NASA's Perseverance.
+
+          The Ingenuity helicopter, which landed on Mars with Perseverance on Thursday (Feb. 18), is awake and
+          communicating with controllers on Earth.
+
+          Controllers at NASA's Jet Propulsion Laboratory (JPL) received a downlink on Friday at 6:30 p.m. EST (2330
+          GMT) through the Mars Reconnaissance Orbiter, indicating the 4-lb. (2 kilograms) helicopter and its base
+          station are both operating normally.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
   <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
-  <script src="./text.js"></script>
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+ 
+ 
+  
 
 
 
 
 </body>
 </html>
+
+
