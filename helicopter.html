@@ -13,7 +13,7 @@
 
   <style>
     body {
-      background-color: rgb(252, 196, 112);
+      background-color: rgb(252, 196, 113);
 
     }
 
@@ -25,7 +25,7 @@
 
     }
 
-    ul {
+    ul.navi-yan {
       margin: 0;
       padding: 0;
       width: 10%;
@@ -58,7 +58,7 @@
       color: black;
       font-size: 50px;
       text-align: center;
-      padding: 30px 0px 0px 0px;
+      padding: 60px 0px 0px 0px;
       filter: alpha(opacity=20);
       opacity: 0.5;
     }
@@ -80,6 +80,8 @@
 
     }
 
+
+
     .container1 {
       display: flex;
       font-size: 18px;
@@ -98,12 +100,17 @@
     }
 
 
+
+
     .item-2 {
       font-size: 20px;
       text-align: justify;
       padding: 20px;
       margin-left: 20px;
+
     }
+
+
 
 
     #watch_online {
@@ -132,7 +139,7 @@
     }
 
 
-    .container {
+    .container2 {
       display: flex;
       font-size: 14px;
       margin: 10px;
@@ -143,7 +150,20 @@
       color: #000000;
       text-align: center;
       background-color: rgba(166, 217, 240, 0.501);
-      padding: 5px;
+      padding: 5px;}
+
+footer {
+  width: 100%;
+  height: 500px;
+}
+
+
+
+
+
+
+
+
   </style>
 
 </head>
@@ -152,15 +172,55 @@
 
 <body>
 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-toggler">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+
+            <a class="nav-link" href="./rover.html">Mars</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Perseverance</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./roket.html">Rover</a></li>
+              <li><a class="dropdown-item" href="./roket.html">Roket</a></li>
+              <li><a class="dropdown-item" href="./rover.html">Mini Helikopter</a></li>
+              <li><a class="dropdown-item" href="./aydasu.html">Insight Lander</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
 
   <section class="helicopter">
+
+
+    
+
 
     <nav id="navigation">
 
       <h1 class="mini_helicopter">Mini Helicopter</h1>
 
 
-      <ul>
+      <ul class="navi-yan">
         <li><a href="#navigation">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
@@ -246,7 +306,7 @@
   <section class="page2">
     <h1 id="features">Features</h1>
 
-    <div class="container">
+    <div class="container2">
 
       <div class="item-1">
 
@@ -255,11 +315,6 @@
       </div>
 
       <div class="item-2">
-
-        <iframe width="800" height="450" src="https://www.youtube.com/embed/r3-CmT9rL4Y?list=PLTiv_XWHnOZpzQKYC6nLf6M9AuBbng_O8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
         <p>Taking Flight on Another World
           Mars Helicopter with Perseverance rover in the background
           The Mars Helicopter, Ingenuity, is a technology demonstration to test powered flight on another world for the
@@ -290,7 +345,7 @@
 
     <h1 id="media">Media</h1>
 
-    <div class="container">
+    <div class="container2">
 
       <div class="item">
 
@@ -319,8 +374,7 @@
               <a href="https://www.youtube.com/watch?v=WK5YXZIIEKU">YouTube</a>, <a
                 href="https://www.facebook.com/NASAJPL/">Facebook</a> , <a
                 href="https://www.nasa.gov/multimedia/nasatv/#public">NASA Television</a> , and <a
-                href="https://www.nasa.gov/connect/apps.html">NASA App</a>
-            </td>
+                href="https://www.nasa.gov/connect/apps.html">NASA App</a> </td>
             <td class="online"><a href="https://www.youtube.com/watch?v=WK5YXZIIEKU">Watch on YouTube</a>
               NASA JPL</td>
           </tr>
@@ -405,8 +459,20 @@
     </div>
 
   </section>
-          
-</body>
-          
 
+
+  <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+ 
+ 
+  
+
+
+
+
+</body>
 </html>
+
+
