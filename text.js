@@ -1,10 +1,16 @@
 window.addEventListener('scroll',()=>{
   if(window.scrollY<document.querySelector('#cardId').offsetTop){
-    document.querySelector('#particles-js').style.position = 'fixed'
+    document.querySelector('#particles-js').style.position = 'fixed';
+    document.querySelector('#text12').style.color = '#fff'
   }else{
     document.querySelector('#particles-js').style.position = 'absolute'
+    document.querySelector('#text12').style.color = '#000'
   }
+
 })
+
+
+
 
     particlesJS("particles-js", {
         "particles": {
