@@ -19,6 +19,11 @@ padding-top: 56px;
       display        : block;
 
   }
+
+
+
+
+
   #particles-js {
       position            : fixed;
   
@@ -31,3 +36,5 @@ padding-top: 56px;
       background-size     : cover;
       z-index: -1;
   }
+
+
