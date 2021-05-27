@@ -1,4 +1,4 @@
-window.addEventListener('scroll',()=>{
+/* window.addEventListener('scroll',()=>{
   if(window.scrollY<document.querySelector('#cardId').offsetTop){
     document.querySelector('#particles-js').style.position = 'fixed';
     document.querySelector('#text12').style.color = '#fff'
@@ -7,7 +7,7 @@ window.addEventListener('scroll',()=>{
     document.querySelector('#text12').style.color = '#000'
   }
 
-})
+}) */
 
 
 
